@@ -1,12 +1,10 @@
 // サイトの設定はここだけで変える (ページの中に直接書かない)
 // 空欄 ("") のものは、ページ上で「準備中」と表示されます。
 window.URLL_SITE = {
-  version: "0.005",
-
   minMacOS: "macOS 14 以降",
 
-  // DMG のダウンロード先。GitHub で公開したら、Releases の URL を入れる
-  downloadUrl: "",
+  // GitHub のリポジトリ (ユーザー名/リポジトリ名)。最新リリースのバージョンと DMG はここから自動で読む
+  githubRepo: "iori-soft/URLL",
 
   // ソースコード (GitHub リポジトリ) の URL。公開したら入れる
   sourceUrl: "https://github.com/iori-soft/URLL",

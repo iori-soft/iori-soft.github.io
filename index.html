@@ -48,7 +48,7 @@
           </a>
           <a class="btn btn-ghost" href="#features">できることを見る</a>
         </div>
-        <p class="hero-meta"><span class="js-version">v0.005</span> ・ <span class="js-minos">macOS 14 以降</span> ・ 個人開発</p>
+        <p class="hero-meta"><span class="js-version-wrap" hidden><span class="js-version"></span> ・ </span><span class="js-minos">macOS 14 以降</span> ・ 個人開発</p>
       </div>
       <div class="hero-art">
         <img src="assets/hero-room.svg" alt="夜のお部屋で、マスコットのちびネコが ⌥ キーを抱えている。机のノートパソコンにはショートカット一覧が光っている。" width="640" height="540">
@@ -79,7 +79,7 @@
             <svg viewBox="0 0 84 64"><rect x="4" y="14" width="34" height="34" rx="9" fill="#fff" stroke="#2a2152" stroke-width="3"/><rect x="4" y="42" width="34" height="6" rx="3" fill="#2a2152" opacity=".15"/><text x="21" y="37" text-anchor="middle" font-size="15" font-weight="800" fill="#2a2152">⌥T</text><path d="M42 31h6m0 0l-3-3m3 3l-3 3" fill="none" stroke="#2a2152" stroke-width="2.6" stroke-linecap="round"/><rect x="52" y="16" width="30" height="30" rx="8" fill="#ff9fb8" stroke="#2a2152" stroke-width="3"/><path d="M59 26l5 4-5 4M66 38h9" fill="none" stroke="#2a2152" stroke-width="2.6" stroke-linecap="round"/></svg>
           </div>
           <h3>アプリ起動</h3>
-          <p>URL のかわりにアプリも登録できます。キーを押すと、そのアプリが起動して前に出てきます。ターミナルやメモ帳をすぐ呼び出したいときに。</p>
+          <p>URL のかわりにアプリも登録できます。キーを押すと、そのアプリが起動して前に出てきます。ターミナルやメモをすぐ呼び出したいときに。</p>
         </article>
 
         <article class="card card-yellow">
@@ -87,13 +87,13 @@
             <svg viewBox="0 0 84 64"><rect x="2" y="14" width="34" height="34" rx="9" fill="#fff" stroke="#2a2152" stroke-width="3"/><rect x="2" y="42" width="34" height="6" rx="3" fill="#2a2152" opacity=".15"/><text x="19" y="37" text-anchor="middle" font-size="15" font-weight="800" fill="#2a2152">⌥W</text><path d="M39 31h6m0 0l-3-3m3 3l-3 3" fill="none" stroke="#2a2152" stroke-width="2.6" stroke-linecap="round"/><rect x="48" y="14" width="34" height="34" rx="9" fill="#ffd166" stroke="#2a2152" stroke-width="3"/><rect x="48" y="42" width="34" height="6" rx="3" fill="#2a2152" opacity=".15"/><text x="65" y="37" text-anchor="middle" font-size="15" font-weight="800" fill="#2a2152">⌘W</text></svg>
           </div>
           <h3>キー操作の置きかえ</h3>
-          <p>あるキーを押したら、別のキーを前のアプリへ送ります。たとえば <kbd>⌥W</kbd> を押すと、タブを閉じる <kbd>⌘W</kbd> に。よく使う操作は一覧から選ぶだけ。</p>
+          <p>あるキーを押したら、別のキーを前面のアプリへ送ります。たとえば <kbd>⌥W</kbd> を押すと、タブを閉じる <kbd>⌘W</kbd> に。よく使う操作は一覧から選ぶだけ。</p>
         </article>
       </div>
 
       <div class="minis">
         <div class="mini"><span class="mini-emoji" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="6" y="5" width="20" height="24" rx="5" fill="#7ee0ff" stroke="#2a2152" stroke-width="2.4"/><rect x="11" y="2.5" width="10" height="6" rx="3" fill="#fff" stroke="#2a2152" stroke-width="2.4"/><path d="M11 15h10M11 20h10M11 25h6" stroke="#2a2152" stroke-width="2.4" stroke-linecap="round"/></svg></span><div><b><kbd>⌃</kbd><kbd>/</kbd> で一覧</b><br>割り当てたキーをいつでも確認</div></div>
-        <div class="mini"><span class="mini-emoji" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 4h13l6 6v18H7z" fill="#fff" stroke="#2a2152" stroke-width="2.4" stroke-linejoin="round"/><path d="M20 4v6h6" fill="#ffd166" stroke="#2a2152" stroke-width="2.4" stroke-linejoin="round"/><path d="M11 16h10M11 21h10" stroke="#2a2152" stroke-width="2.4" stroke-linecap="round"/></svg></span><div><b>テキストで書き出し</b><br>設定はメモ帳でも読める形でバックアップ</div></div>
+        <div class="mini"><span class="mini-emoji" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 4h13l6 6v18H7z" fill="#fff" stroke="#2a2152" stroke-width="2.4" stroke-linejoin="round"/><path d="M20 4v6h6" fill="#ffd166" stroke="#2a2152" stroke-width="2.4" stroke-linejoin="round"/><path d="M11 16h10M11 21h10" stroke="#2a2152" stroke-width="2.4" stroke-linecap="round"/></svg></span><div><b>テキストで書き出し</b><br>設定はテキストエディットでも読める形でバックアップ</div></div>
         <div class="mini"><span class="mini-emoji" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M21 4a12 12 0 1 0 7 19A10 10 0 0 1 21 4z" fill="#ffd166" stroke="#2a2152" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 6l1 2.5 2.5 1-2.5 1L24 13l-1-2.5-2.5-1 2.5-1z" fill="#fff6c8"/></svg></span><div><b>ログイン時に自動起動</b><br>オンにすれば、いつでもキーが効く</div></div>
         <div class="mini"><span class="mini-emoji" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M10 14v-4a6 6 0 0 1 12 0v4" fill="none" stroke="#2a2152" stroke-width="2.6"/><rect x="6" y="14" width="20" height="15" rx="5" fill="#ff9fb8" stroke="#2a2152" stroke-width="2.4"/><circle cx="16" cy="21.5" r="2.4" fill="#2a2152"/></svg></span><div><b>通信しないアプリ</b><br>登録した内容はあなたの Mac の中だけ</div></div>
       </div>
@@ -106,7 +106,7 @@
       <div class="screens-text">
         <p class="eyebrow eyebrow-light">画面のようす</p>
         <h2>忘れても大丈夫。<br><kbd class="kbd-big">⌃</kbd><kbd class="kbd-big">/</kbd> で一覧が出ます。</h2>
-        <p>どのアプリの上でも、画面のまん中に「キー → 開く先」の一覧がふわっと出ます。行をクリックしてもそのまま開けます。もう一度 <kbd>⌃</kbd><kbd>/</kbd> か <kbd>esc</kbd> で閉じます。</p>
+        <p>どのアプリの上でも、画面のまん中に「キー → 開く先」の一覧がふわっと出ます。行をクリックしてもそのまま開けます。もう一度 <kbd>⌃</kbd><kbd>/</kbd> か <kbd>Esc</kbd> で閉じます。</p>
         <p class="note-light">※ 一覧の画面は説明用のイメージです。実際の画面写真はこれから差しかえます。</p>
       </div>
 
@@ -135,7 +135,7 @@
         <li class="step">
           <span class="step-num">1</span>
           <h3>アプリを入れる</h3>
-          <p>ダウンロードした <b>URLL.dmg</b> を開いて、URLL を「アプリケーション」フォルダへドラッグします。</p>
+          <p>ダウンロードした <b>DMG ファイル</b>を開いて、URLL を「アプリケーション」フォルダへドラッグします。</p>
         </li>
         <li class="step">
           <span class="step-num">2</span>
@@ -154,7 +154,7 @@
         <h3>はじめて開くときの手順（くわしく）</h3>
         <p>URLL は Apple の公証（ノータリゼーション）を受けたアプリです。次の順に進めてください。</p>
         <ol class="install-steps">
-          <li>URLL.dmg をダウンロードして開き、URLL を「アプリケーション」フォルダへドラッグします。</li>
+          <li>DMG ファイルをダウンロードして開き、URLL を「アプリケーション」フォルダへドラッグします。</li>
           <li>URLL をダブルクリックして開きます。「インターネットからダウンロードされたアプリです」と聞かれたら<b>「開く」</b>を押します。</li>
           <li>URLL が起動して、メニューバーにアイコンが出ます。</li>
           <li>キー操作を使うときは、設定画面の「キー操作」タブで<b>「許可する…」</b>を押し、アクセシビリティで URLL をオンにします。
@@ -172,12 +172,12 @@
         <p class="eyebrow">ダウンロード</p>
         <h2>URLL を無料で使う</h2>
         <p class="download-meta">
-          バージョン <b class="js-version">0.005</b> ・ <span class="js-minos">macOS 14 以降</span> ・ DMG ファイル
+          <span class="js-version-wrap" hidden>バージョン <b class="js-version"></b> ・ </span><span class="js-minos">macOS 14 以降</span> ・ DMG ファイル
         </p>
         <div class="download-actions">
           <a class="btn btn-primary btn-lg js-download" href="#" data-pending="ダウンロード準備中">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span class="btn-label">URLL.dmg をダウンロード</span>
+            <span class="btn-label">DMG をダウンロード</span>
           </a>
           <a class="btn btn-ghost-dark js-source" href="#" data-pending="ソースコード (準備中)">ソースコードを見る</a>
         </div>
@@ -255,7 +255,6 @@
   (function () {
     var c = window.URLL_SITE || {};
     function each(sel, fn) { document.querySelectorAll(sel).forEach(fn); }
-    if (c.version) each('.js-version', function (el) { el.textContent = (el.tagName === 'B' ? '' : 'v') + c.version; });
     if (c.minMacOS) each('.js-minos', function (el) { el.textContent = c.minMacOS; });
     each('.js-year', function (el) { el.textContent = new Date().getFullYear(); });
 
@@ -273,7 +272,25 @@
         }
       });
     }
-    link('.js-download', c.downloadUrl);
+    // ダウンロード: GitHub の最新リリースを読み、バージョンと DMG のリンクを入れる。
+    // 読めないとき・リリースがまだないときは、リリースのページへのリンクにしてバージョンは出さない。
+    if (c.githubRepo) {
+      link('.js-download', 'https://github.com/' + c.githubRepo + '/releases/latest');
+      fetch('https://api.github.com/repos/' + c.githubRepo + '/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (rel) {
+          var dmg = (rel.assets || []).filter(function (a) { return /\.dmg$/i.test(a.name); })[0];
+          if (dmg) each('.js-download', function (el) { el.href = dmg.browser_download_url; el.removeAttribute('target'); });
+          var v = String(rel.tag_name || '').replace(/^v/i, '');
+          if (v) {
+            each('.js-version', function (el) { el.textContent = (el.tagName === 'B' ? '' : 'v') + v; });
+            each('.js-version-wrap', function (el) { el.hidden = false; });
+          }
+        })
+        .catch(function () {});
+    } else {
+      link('.js-download', '');
+    }
     link('.js-source', c.sourceUrl);
     link('.js-coffee', c.coffeeUrl);
     link('.js-kofi', c.kofiUrl);
