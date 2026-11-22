@@ -9,7 +9,7 @@ window.URLL_SITE = {
   downloadUrl: "",
 
   // ソースコード (GitHub リポジトリ) の URL。公開したら入れる
-  sourceUrl: "",
+  sourceUrl: "https://github.com/iori-soft/URLL",
 
   // 応援ボタン(メイン): PayPal の支払いページ
   coffeeUrl: "https://www.paypal.com/ncp/payment/ZE3V7STJE6Z2S",
