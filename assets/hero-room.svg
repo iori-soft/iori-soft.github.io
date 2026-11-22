@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 540" role="img" aria-labelledby="t d">
+  <title id="t">夜のお部屋で URLL を使うちびネコ</title>
+  <desc id="d">月の見える窓辺の机で、マスコットのちびネコが ⌥ キーを抱えている。ノートパソコンの画面にはショートカット一覧が光っている。</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2563"/>
+      <stop offset="1" stop-color="#4a2f6e"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f1640"/>
+      <stop offset="1" stop-color="#3b3a8a"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9774a"/>
+      <stop offset="1" stop-color="#8a5434"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14254f"/>
+      <stop offset="1" stop-color="#0b1633"/>
+    </linearGradient>
+    <radialGradient id="lampGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd58a" stop-opacity="0.75"/>
+      <stop offset="0.55" stop-color="#ffb46b" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffb46b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="screenGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5fd4ff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#5fd4ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6d6" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#fff6d6" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="winClip"><rect x="58" y="62" width="214" height="196" rx="10"/></clipPath>
+    <clipPath id="roomClip"><rect x="0" y="0" width="640" height="540" rx="36"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#roomClip)">
+    <!-- wall -->
+    <rect width="640" height="540" fill="url(#wall)"/>
+    <!-- wallpaper dots -->
+    <g fill="#ffffff" opacity="0.05">
+      <circle cx="330" cy="60" r="3"/><circle cx="390" cy="110" r="3"/><circle cx="450" cy="60" r="3"/>
+      <circle cx="510" cy="110" r="3"/><circle cx="570" cy="60" r="3"/><circle cx="330" cy="160" r="3"/>
+      <circle cx="450" cy="160" r="3"/><circle cx="570" cy="160" r="3"/><circle cx="390" cy="210" r="3"/>
+      <circle cx="510" cy="210" r="3"/><circle cx="610" cy="210" r="3"/><circle cx="30" cy="300" r="3"/>
+    </g>
+
+    <!-- window -->
+    <rect x="46" y="50" width="238" height="220" rx="16" fill="#7a4b36"/>
+    <rect x="58" y="62" width="214" height="196" rx="10" fill="url(#sky)"/>
+    <g clip-path="url(#winClip)">
+      <circle cx="210" cy="112" r="70" fill="url(#moonGlow)"/>
+      <circle cx="210" cy="112" r="30" fill="#fff3c4"/>
+      <circle cx="224" cy="102" r="27" fill="#25296b"/>
+      <g fill="#fff">
+        <circle cx="92" cy="92" r="2"/><circle cx="130" cy="78" r="1.4"/><circle cx="158" cy="120" r="1.8"/>
+        <circle cx="104" cy="140" r="1.2"/><circle cx="250" cy="170" r="1.4"/><circle cx="80" cy="180" r="1.6"/>
+      </g>
+      <path d="M118 104 l3 -9 l3 9 l9 3 l-9 3 l-3 9 l-3 -9 l-9 -3 z" fill="#fff6c8"/>
+      <!-- city silhouette -->
+      <path d="M58 258 V214 h20 v-18 h18 v26 h14 v-36 h22 v30 h16 v-14 h20 v30 h18 v-44 h24 v40 h16 v-20 h26 v64 z" fill="#1a1846"/>
+      <g fill="#ffd27a">
+        <rect x="64" y="222" width="4" height="5"/><rect x="84" y="204" width="4" height="5"/>
+        <rect x="118" y="196" width="4" height="5"/><rect x="118" y="212" width="4" height="5"/>
+        <rect x="190" y="184" width="4" height="5"/><rect x="200" y="200" width="4" height="5"/>
+        <rect x="230" y="232" width="4" height="5"/><rect x="150" y="234" width="4" height="5"/>
+      </g>
+    </g>
+    <rect x="163" y="62" width="6" height="196" fill="#7a4b36"/>
+    <rect x="58" y="158" width="214" height="6" fill="#7a4b36"/>
+    <rect x="36" y="266" width="258" height="14" rx="7" fill="#8f5a40"/>
+    <!-- plant on sill -->
+    <path d="M90 266 q-4 -26 -20 -36 q22 4 24 30 q2 -36 22 -46 q-12 22 -12 52 z" fill="#5fbf8f"/>
+    <rect x="80" y="244" width="34" height="24" rx="6" fill="#ff9f8a"/>
+
+    <!-- fairy lights -->
+    <path d="M0 26 Q160 92 320 34 T640 40" fill="none" stroke="#3b2f5e" stroke-width="2"/>
+    <g>
+      <circle cx="40" cy="42" r="6" fill="#ffd166"/><circle cx="40" cy="42" r="14" fill="#ffd166" opacity="0.18"/>
+      <circle cx="110" cy="62" r="6" fill="#ff8fab"/><circle cx="110" cy="62" r="14" fill="#ff8fab" opacity="0.18"/>
+      <circle cx="185" cy="68" r="6" fill="#7ee0ff"/><circle cx="185" cy="68" r="14" fill="#7ee0ff" opacity="0.18"/>
+      <circle cx="258" cy="54" r="6" fill="#ffd166"/><circle cx="258" cy="54" r="14" fill="#ffd166" opacity="0.18"/>
+      <circle cx="340" cy="33" r="6" fill="#ff8fab"/><circle cx="340" cy="33" r="14" fill="#ff8fab" opacity="0.18"/>
+      <circle cx="420" cy="22" r="6" fill="#7ee0ff"/><circle cx="420" cy="22" r="14" fill="#7ee0ff" opacity="0.18"/>
+      <circle cx="500" cy="32" r="6" fill="#ffd166"/><circle cx="500" cy="32" r="14" fill="#ffd166" opacity="0.18"/>
+      <circle cx="580" cy="44" r="6" fill="#ff8fab"/><circle cx="580" cy="44" r="14" fill="#ff8fab" opacity="0.18"/>
+    </g>
+
+    <!-- shelf with books -->
+    <rect x="388" y="150" width="210" height="10" rx="5" fill="#8f5a40"/>
+    <rect x="404" y="98" width="16" height="52" rx="3" fill="#ff9f6e"/>
+    <rect x="422" y="106" width="14" height="44" rx="3" fill="#7ee0ff"/>
+    <rect x="438" y="94" width="18" height="56" rx="3" fill="#c3a6ff"/>
+    <rect x="458" y="112" width="12" height="38" rx="3" transform="rotate(12 464 150)" fill="#ffd166"/>
+    <circle cx="548" cy="128" r="20" fill="#5fbf8f"/>
+    <rect x="534" y="130" width="28" height="20" rx="5" fill="#f4e3c8"/>
+
+    <!-- lamp glow -->
+    <circle cx="540" cy="300" r="170" fill="url(#lampGlow)"/>
+
+    <!-- desk -->
+    <rect x="0" y="420" width="640" height="120" fill="url(#desk)"/>
+    <rect x="0" y="414" width="640" height="14" fill="#c98a5a"/>
+
+    <!-- lamp -->
+    <path d="M500 414 h70 l-8 -10 h-54 z" fill="#3b2f5e"/>
+    <rect x="532" y="300" width="6" height="106" fill="#3b2f5e"/>
+    <path d="M492 312 l36 -64 h14 l36 64 z" fill="#ffcf7d"/>
+    <path d="M492 312 h86" stroke="#e6a95a" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- laptop glow -->
+    <ellipse cx="330" cy="330" rx="170" ry="120" fill="url(#screenGlow)"/>
+    <!-- laptop -->
+    <rect x="214" y="232" width="236" height="164" rx="14" fill="#c9d2e3"/>
+    <rect x="224" y="242" width="216" height="144" rx="8" fill="url(#screen)"/>
+    <!-- shortcut panel on screen -->
+    <rect x="248" y="258" width="168" height="112" rx="10" fill="#1e3466" stroke="#5fd4ff" stroke-opacity="0.6"/>
+    <g font-family="'M PLUS Rounded 1c', 'Hiragino Maru Gothic ProN', sans-serif" font-size="11" font-weight="700">
+      <rect x="260" y="270" width="30" height="18" rx="5" fill="#5fd4ff"/>
+      <text x="275" y="283" text-anchor="middle" fill="#0b1633">⌥G</text>
+      <rect x="298" y="276" width="96" height="6" rx="3" fill="#ffffff" opacity="0.75"/>
+      <rect x="260" y="296" width="30" height="18" rx="5" fill="#ff9fb8"/>
+      <text x="275" y="309" text-anchor="middle" fill="#3a1030">⌥M</text>
+      <rect x="298" y="302" width="72" height="6" rx="3" fill="#ffffff" opacity="0.75"/>
+      <rect x="260" y="322" width="30" height="18" rx="5" fill="#ffd166"/>
+      <text x="275" y="335" text-anchor="middle" fill="#3b2400">⌥T</text>
+      <rect x="298" y="328" width="84" height="6" rx="3" fill="#ffffff" opacity="0.75"/>
+      <rect x="260" y="348" width="30" height="16" rx="5" fill="#c3a6ff"/>
+      <text x="275" y="360" text-anchor="middle" fill="#25104a">⌥W</text>
+      <rect x="298" y="353" width="60" height="6" rx="3" fill="#ffffff" opacity="0.75"/>
+    </g>
+    <path d="M190 396 h284 l-14 22 h-256 z" fill="#aeb8cc"/>
+    <rect x="300" y="398" width="64" height="6" rx="3" fill="#8d98ae"/>
+
+    <!-- coffee mug -->
+    <g>
+      <path d="M470 380 q-6 -16 4 -30 q8 -12 0 -24" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="4" stroke-linecap="round"/>
+      <path d="M490 384 q-6 -14 4 -26 q8 -10 0 -22" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="4" stroke-linecap="round"/>
+      <rect x="456" y="378" width="52" height="46" rx="10" fill="#fff4e6"/>
+      <path d="M508 388 q22 0 22 16 q0 16 -22 16" fill="none" stroke="#fff4e6" stroke-width="7"/>
+      <path d="M470 398 q12 -10 24 0 q-12 14 -24 0 z" fill="#ff8fab"/>
+      <ellipse cx="482" cy="380" rx="24" ry="5" fill="#7a4b36"/>
+    </g>
+
+    <!-- mascot: ちびネコ holding ⌥ key -->
+    <g transform="translate(40 228) scale(1.12)">
+      <!-- tail -->
+      <path d="M56 150 q-50 -4 -46 -46 q2 -20 -12 -26" fill="none" stroke="#fff1de" stroke-width="18" stroke-linecap="round"/>
+      <path d="M2 82 q-4 -4 -8 -6" fill="none" stroke="#ffb98a" stroke-width="18" stroke-linecap="round"/>
+      <!-- body -->
+      <ellipse cx="90" cy="128" rx="58" ry="40" fill="#fff1de"/>
+      <!-- head -->
+      <path d="M30 34 L36 -14 L70 14 Z" fill="#fff1de"/>
+      <path d="M150 34 L144 -14 L110 14 Z" fill="#fff1de"/>
+      <path d="M40 22 L43 0 L60 14 Z" fill="#ffb3c4"/>
+      <path d="M140 22 L137 0 L120 14 Z" fill="#ffb3c4"/>
+      <ellipse cx="90" cy="54" rx="66" ry="56" fill="#fff1de"/>
+      <!-- head patch -->
+      <path d="M70 2 q20 -10 40 0 q-6 18 -20 20 q-14 -2 -20 -20 z" fill="#ffb98a"/>
+      <!-- eyes -->
+      <ellipse cx="62" cy="58" rx="12" ry="15" fill="#2a2152"/>
+      <ellipse cx="118" cy="58" rx="12" ry="15" fill="#2a2152"/>
+      <ellipse cx="62" cy="64" rx="8" ry="7" fill="#4f6bd8"/>
+      <ellipse cx="118" cy="64" rx="8" ry="7" fill="#4f6bd8"/>
+      <circle cx="58" cy="52" r="5" fill="#fff"/><circle cx="114" cy="52" r="5" fill="#fff"/>
+      <circle cx="66" cy="66" r="2" fill="#fff"/><circle cx="122" cy="66" r="2" fill="#fff"/>
+      <!-- blush -->
+      <ellipse cx="44" cy="80" rx="11" ry="6" fill="#ff9fb8" opacity="0.8"/>
+      <ellipse cx="136" cy="80" rx="11" ry="6" fill="#ff9fb8" opacity="0.8"/>
+      <!-- nose & mouth -->
+      <path d="M86 74 h8 l-4 5 z" fill="#ff7f9f"/>
+      <path d="M80 82 q5 6 10 0 q5 6 10 0" fill="none" stroke="#2a2152" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- whiskers -->
+      <g stroke="#e8cdb0" stroke-width="2" stroke-linecap="round">
+        <path d="M24 70 l-16 -4"/><path d="M24 78 l-16 2"/><path d="M156 70 l16 -4"/><path d="M156 78 l16 2"/>
+      </g>
+      <!-- scarf -->
+      <path d="M40 98 q50 22 100 0 l2 14 q-52 24 -104 0 z" fill="#38bdf8"/>
+      <path d="M118 108 l14 36 l-18 -2 l-8 -30 z" fill="#2196d6"/>
+      <!-- chain charm -->
+      <g transform="translate(78 110) rotate(-30)">
+        <rect x="0" y="0" width="18" height="10" rx="5" fill="none" stroke="#e8f7ff" stroke-width="3"/>
+        <rect x="10" y="0" width="18" height="10" rx="5" fill="none" stroke="#e8f7ff" stroke-width="3"/>
+      </g>
+      <!-- keycap -->
+      <g transform="translate(52 120)">
+        <rect x="0" y="6" width="76" height="52" rx="12" fill="#c9d2e3"/>
+        <rect x="0" y="0" width="76" height="50" rx="12" fill="#ffffff"/>
+        <text x="38" y="35" text-anchor="middle" font-family="'M PLUS Rounded 1c', 'Hiragino Maru Gothic ProN', sans-serif" font-size="28" font-weight="800" fill="#2a2152">⌥</text>
+      </g>
+      <!-- paws -->
+      <ellipse cx="54" cy="132" rx="14" ry="11" fill="#fff1de"/>
+      <ellipse cx="126" cy="132" rx="14" ry="11" fill="#fff1de"/>
+      <g fill="#ffb3c4"><circle cx="50" cy="134" r="2.4"/><circle cx="58" cy="134" r="2.4"/><circle cx="122" cy="134" r="2.4"/><circle cx="130" cy="134" r="2.4"/></g>
+    </g>
+
+    <!-- sparkles -->
+    <g fill="#fff6c8">
+      <path d="M470 210 l3 -10 l3 10 l10 3 l-10 3 l-3 10 l-3 -10 l-10 -3 z"/>
+      <path d="M200 300 l2 -7 l2 7 l7 2 l-7 2 l-2 7 l-2 -7 l-7 -2 z" opacity="0.8"/>
+      <path d="M600 260 l2 -7 l2 7 l7 2 l-7 2 l-2 7 l-2 -7 l-7 -2 z" opacity="0.7"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>URLL — キーひとつで、いつものページへ</title>
+  <meta name="description" content="URLL は、ショートカットキー一発で URL やアプリを開ける macOS のメニューバー常駐アプリです。無料で使えます。">
+  <meta property="og:title" content="URLL — キーひとつで、いつものページへ">
+  <meta property="og:description" content="ショートカットキー一発で URL・アプリを開く macOS アプリ。">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/urll-icon-navy-big.svg">
+  <link rel="icon" type="image/png" href="assets/favicon-navy.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20261123-0144">
+  <script src="config.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top"><img src="assets/urll-icon-navy-big.svg" alt="" width="48" height="48"><span class="wordmark-wrap"><span class="wordmark">URLL</span><svg class="spark s1" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s2" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s3" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s4" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s5" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg></span></a>
+  <nav class="topnav">
+    <a href="#features">できること</a>
+    <a href="#howto">使い方</a>
+    <a href="#download">ダウンロード</a>
+    <a href="#coffee" class="nav-coffee"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z" fill="#fff" stroke="currentColor" stroke-width="2"/><path d="M16 11h1.5a2.5 2.5 0 0 1 0 5H16" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 3.5c-1 1.2 1 2.3 0 3.5M12 3.5c-1 1.2 1 2.3 0 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>応援</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="hero-sky" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-badge">macOS メニューバーアプリ ・ 無料</p>
+        <h1><span class="nw">キーひとつで、</span><br><span class="hl nw">いつものページへ。</span></h1>
+        <p class="hero-lead">
+          <b>URLL</b>(ユーアールエルエル)は、<kbd>⌥</kbd>+<kbd>G</kbd> のようなショートカットキー一発で、
+          よく見る Web ページやアプリを開ける小さなアプリです。ブックマークを探す手間を、ぜんぶキーにおまかせ。
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary js-download" href="#download">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            無料ダウンロード
+          </a>
+          <a class="btn btn-ghost" href="#features">できることを見る</a>
+        </div>
+        <p class="hero-meta"><span class="js-version">v0.005</span> ・ <span class="js-minos">macOS 14 以降</span> ・ 個人開発</p>
+      </div>
+      <div class="hero-art">
+        <img src="assets/hero-room.svg" alt="夜のお部屋で、マスコットのちびネコが ⌥ キーを抱えている。机のノートパソコンにはショートカット一覧が光っている。" width="640" height="540">
+        <div class="hero-bubble">⌥G で Google、<br>⌥M でメール…にゃ！</div>
+      </div>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C240 90 480 0 720 30 S1200 80 1440 30 V80 H0 Z"/></svg>
+  </section>
+
+  <!-- できること -->
+  <section id="features" class="section">
+    <div class="wrap">
+      <p class="eyebrow">できること</p>
+      <h2>毎日の「あのページ開きたい」を、キーひとつで。</h2>
+      <p class="section-lead">どのアプリを使っていても、登録したキーを押すだけ。メニューバーにちょこんと住んで、Dock は散らかしません。</p>
+
+      <div class="cards">
+        <article class="card card-blue">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 84 64"><rect x="4" y="14" width="34" height="34" rx="9" fill="#fff" stroke="#2a2152" stroke-width="3"/><rect x="4" y="42" width="34" height="6" rx="3" fill="#2a2152" opacity=".15"/><text x="21" y="37" text-anchor="middle" font-size="15" font-weight="800" fill="#2a2152">⌥G</text><path d="M42 31h6m0 0l-3-3m3 3l-3 3" fill="none" stroke="#2a2152" stroke-width="2.6" stroke-linecap="round"/><circle cx="66" cy="31" r="14" fill="#38bdf8" stroke="#2a2152" stroke-width="3"/><path d="M52 31h28M66 17c-6 8-6 20 0 28M66 17c6 8 6 20 0 28" fill="none" stroke="#2a2152" stroke-width="2.2"/></svg>
+          </div>
+          <h3>URL ジャンプ</h3>
+          <p>キーと URL を組にして登録。<kbd>⌥</kbd><kbd>⌘</kbd><kbd>⌃</kbd> とほかのキーの組み合わせで、ブラウザでページが開きます。<code>shortcuts://</code> や <code>mailto:</code> も OK。</p>
+        </article>
+
+        <article class="card card-pink">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 84 64"><rect x="4" y="14" width="34" height="34" rx="9" fill="#fff" stroke="#2a2152" stroke-width="3"/><rect x="4" y="42" width="34" height="6" rx="3" fill="#2a2152" opacity=".15"/><text x="21" y="37" text-anchor="middle" font-size="15" font-weight="800" fill="#2a2152">⌥T</text><path d="M42 31h6m0 0l-3-3m3 3l-3 3" fill="none" stroke="#2a2152" stroke-width="2.6" stroke-linecap="round"/><rect x="52" y="16" width="30" height="30" rx="8" fill="#ff9fb8" stroke="#2a2152" stroke-width="3"/><path d="M59 26l5 4-5 4M66 38h9" fill="none" stroke="#2a2152" stroke-width="2.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>アプリ起動</h3>
+          <p>URL のかわりにアプリも登録できます。キーを押すと、そのアプリが起動して前に出てきます。ターミナルやメモ帳をすぐ呼び出したいときに。</p>
+        </article>
+
+        <article class="card card-yellow">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 84 64"><rect x="2" y="14" width="34" height="34" rx="9" fill="#fff" stroke="#2a2152" stroke-width="3"/><rect x="2" y="42" width="34" height="6" rx="3" fill="#2a2152" opacity=".15"/><text x="19" y="37" text-anchor="middle" font-size="15" font-weight="800" fill="#2a2152">⌥W</text><path d="M39 31h6m0 0l-3-3m3 3l-3 3" fill="none" stroke="#2a2152" stroke-width="2.6" stroke-linecap="round"/><rect x="48" y="14" width="34" height="34" rx="9" fill="#ffd166" stroke="#2a2152" stroke-width="3"/><rect x="48" y="42" width="34" height="6" rx="3" fill="#2a2152" opacity=".15"/><text x="65" y="37" text-anchor="middle" font-size="15" font-weight="800" fill="#2a2152">⌘W</text></svg>
+          </div>
+          <h3>キー操作の置きかえ</h3>
+          <p>あるキーを押したら、別のキーを前のアプリへ送ります。たとえば <kbd>⌥W</kbd> を押すと、タブを閉じる <kbd>⌘W</kbd> に。よく使う操作は一覧から選ぶだけ。</p>
+        </article>
+      </div>
+
+      <div class="minis">
+        <div class="mini"><span class="mini-emoji" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="6" y="5" width="20" height="24" rx="5" fill="#7ee0ff" stroke="#2a2152" stroke-width="2.4"/><rect x="11" y="2.5" width="10" height="6" rx="3" fill="#fff" stroke="#2a2152" stroke-width="2.4"/><path d="M11 15h10M11 20h10M11 25h6" stroke="#2a2152" stroke-width="2.4" stroke-linecap="round"/></svg></span><div><b><kbd>⌃</kbd><kbd>/</kbd> で一覧</b><br>割り当てたキーをいつでも確認</div></div>
+        <div class="mini"><span class="mini-emoji" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 4h13l6 6v18H7z" fill="#fff" stroke="#2a2152" stroke-width="2.4" stroke-linejoin="round"/><path d="M20 4v6h6" fill="#ffd166" stroke="#2a2152" stroke-width="2.4" stroke-linejoin="round"/><path d="M11 16h10M11 21h10" stroke="#2a2152" stroke-width="2.4" stroke-linecap="round"/></svg></span><div><b>テキストで書き出し</b><br>設定はメモ帳でも読める形でバックアップ</div></div>
+        <div class="mini"><span class="mini-emoji" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M21 4a12 12 0 1 0 7 19A10 10 0 0 1 21 4z" fill="#ffd166" stroke="#2a2152" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 6l1 2.5 2.5 1-2.5 1L24 13l-1-2.5-2.5-1 2.5-1z" fill="#fff6c8"/></svg></span><div><b>ログイン時に自動起動</b><br>オンにすれば、いつでもキーが効く</div></div>
+        <div class="mini"><span class="mini-emoji" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M10 14v-4a6 6 0 0 1 12 0v4" fill="none" stroke="#2a2152" stroke-width="2.6"/><rect x="6" y="14" width="20" height="15" rx="5" fill="#ff9fb8" stroke="#2a2152" stroke-width="2.4"/><circle cx="16" cy="21.5" r="2.4" fill="#2a2152"/></svg></span><div><b>通信しないアプリ</b><br>登録した内容はあなたの Mac の中だけ</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 画面 -->
+  <section id="screens" class="section section-night">
+    <div class="wrap screens">
+      <div class="screens-text">
+        <p class="eyebrow eyebrow-light">画面のようす</p>
+        <h2>忘れても大丈夫。<br><kbd class="kbd-big">⌃</kbd><kbd class="kbd-big">/</kbd> で一覧が出ます。</h2>
+        <p>どのアプリの上でも、画面のまん中に「キー → 開く先」の一覧がふわっと出ます。行をクリックしてもそのまま開けます。もう一度 <kbd>⌃</kbd><kbd>/</kbd> か <kbd>esc</kbd> で閉じます。</p>
+        <p class="note-light">※ 一覧の画面は説明用のイメージです。実際の画面写真はこれから差しかえます。</p>
+      </div>
+
+      <!-- 実際のスクリーンショットができたら、この figure の中身を <img src="assets/screenshot-list.png"> にかえる -->
+      <figure class="mock" aria-label="ショートカット一覧パネルのイメージ">
+        <div class="mock-window">
+          <div class="mock-title"><span></span><span></span><span></span><b>ショートカット一覧</b></div>
+          <ul class="mock-list">
+            <li><kbd>⌥G</kbd><span class="mock-name">Google</span><span class="mock-url">google.com</span></li>
+            <li><kbd>⌥M</kbd><span class="mock-name">メール</span><span class="mock-url">mail.example.com</span></li>
+            <li><kbd>⌥C</kbd><span class="mock-name">カレンダー</span><span class="mock-url">calendar.example.com</span></li>
+            <li><kbd>⌥T</kbd><span class="mock-name">ターミナル</span><span class="mock-url">アプリ</span></li>
+            <li><kbd>⌥W</kbd><span class="mock-name">タブを閉じる</span><span class="mock-url">⌘W を送る</span></li>
+          </ul>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 使い方 -->
+  <section id="howto" class="section">
+    <div class="wrap">
+      <p class="eyebrow">使い方</p>
+      <h2>はじめかたは 3 ステップ。</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num">1</span>
+          <h3>アプリを入れる</h3>
+          <p>ダウンロードした <b>URLL.dmg</b> を開いて、URLL を「アプリケーション」フォルダへドラッグします。</p>
+        </li>
+        <li class="step">
+          <span class="step-num">2</span>
+          <h3>はじめて開く</h3>
+          <p>URLL は Apple の公証を受けたアプリです。アプリケーションフォルダの URLL をダブルクリックすれば開きます。くわしい手順は下にあります。</p>
+        </li>
+        <li class="step">
+          <span class="step-num">3</span>
+          <h3>キーを登録</h3>
+          <p>設定画面が自動で出ます。名前と URL を入れて、キーのボタンを押してから登録したいキーを押せば完了。</p>
+        </li>
+      </ol>
+      <p class="howto-note">「キー操作」を使うときだけ、<b>システム設定 → プライバシーとセキュリティ → アクセシビリティ</b> で URLL をオンにします。URL やアプリを開くだけなら、この許可はいりません。</p>
+
+      <div class="install-detail">
+        <h3>はじめて開くときの手順（くわしく）</h3>
+        <p>URLL は Apple の公証（ノータリゼーション）を受けたアプリです。次の順に進めてください。</p>
+        <ol class="install-steps">
+          <li>URLL.dmg をダウンロードして開き、URLL を「アプリケーション」フォルダへドラッグします。</li>
+          <li>URLL をダブルクリックして開きます。「インターネットからダウンロードされたアプリです」と聞かれたら<b>「開く」</b>を押します。</li>
+          <li>URLL が起動して、メニューバーにアイコンが出ます。</li>
+          <li>キー操作を使うときは、設定画面の「キー操作」タブで<b>「許可する…」</b>を押し、アクセシビリティで URLL をオンにします。
+            <div class="shot-placeholder">画面写真（準備中）</div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ダウンロード -->
+  <section id="download" class="section section-cream">
+    <div class="wrap download">
+      <img class="download-icon" src="assets/urll-icon-navy-big.svg" alt="URLL のアイコン" width="128" height="128">
+      <div class="download-body">
+        <p class="eyebrow">ダウンロード</p>
+        <h2>URLL を無料で使う</h2>
+        <p class="download-meta">
+          バージョン <b class="js-version">0.005</b> ・ <span class="js-minos">macOS 14 以降</span> ・ DMG ファイル
+        </p>
+        <div class="download-actions">
+          <a class="btn btn-primary btn-lg js-download" href="#" data-pending="ダウンロード準備中">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="btn-label">URLL.dmg をダウンロード</span>
+          </a>
+          <a class="btn btn-ghost-dark js-source" href="#" data-pending="ソースコード (準備中)">ソースコードを見る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 応援 (Buy Me a Coffee) -->
+  <section id="coffee" class="section coffee">
+    <div class="wrap coffee-inner">
+      <div class="coffee-art" aria-hidden="true">
+        <svg viewBox="0 0 220 200">
+          <path d="M84 52 q-10 -18 4 -32 M112 50 q-10 -18 4 -32 M140 52 q-10 -18 4 -32" fill="none" stroke="#7a4b36" stroke-opacity="0.35" stroke-width="6" stroke-linecap="round"/>
+          <rect x="56" y="64" width="112" height="100" rx="24" fill="#fff"/>
+          <path d="M168 86 q36 0 36 30 q0 30 -36 30" fill="none" stroke="#fff" stroke-width="14"/>
+          <ellipse cx="112" cy="66" rx="52" ry="10" fill="#7a4b36"/>
+          <!-- cat face on mug -->
+          <path d="M84 96 l6 -16 l12 12 z M140 96 l-6 -16 l-12 12 z" fill="#ffb98a"/>
+          <ellipse cx="112" cy="116" rx="34" ry="28" fill="#fff1de"/>
+          <ellipse cx="100" cy="114" rx="5" ry="6" fill="#2a2152"/>
+          <ellipse cx="124" cy="114" rx="5" ry="6" fill="#2a2152"/>
+          <circle cx="98" cy="111" r="2" fill="#fff"/><circle cx="122" cy="111" r="2" fill="#fff"/>
+          <ellipse cx="90" cy="126" rx="6" ry="3.5" fill="#ff9fb8"/><ellipse cx="134" cy="126" rx="6" ry="3.5" fill="#ff9fb8"/>
+          <path d="M106 126 q3 4 6 0 q3 4 6 0" fill="none" stroke="#2a2152" stroke-width="2" stroke-linecap="round"/>
+          <ellipse cx="112" cy="178" rx="78" ry="10" fill="#7a4b36" opacity="0.15"/>
+        </svg>
+      </div>
+      <div class="coffee-text">
+        <p class="eyebrow eyebrow-coffee">応援する</p>
+        <h2>気に入ったら、<br>コーヒー1杯おごってください。</h2>
+        <p>URLL は無料で使えます。もし毎日の役に立ったら、コーヒー1杯ぶんの応援をもらえるととてもうれしいです。次のバージョンを作る元気になります。</p>
+        <div class="coffee-buttons">
+          <a class="btn btn-coffee js-coffee" href="#" data-pending="応援ページ準備中">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z" fill="#fff" stroke="currentColor" stroke-width="2"/><path d="M16 11h1.5a2.5 2.5 0 0 1 0 5H16" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 3.5c-1 1.2 1 2.3 0 3.5M12 3.5c-1 1.2 1 2.3 0 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="btn-label">コーヒー1杯おごる（PayPal）</span>
+          </a>
+          <a class="btn btn-kofi js-kofi" href="#" data-pending="Ko-fi（準備中）"><span class="btn-label">Ko-fi で応援する</span></a>
+        </div>
+        <p class="small">応援しなくても、機能はすべてそのまま使えます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ほかのツール -->
+  <section id="tools" class="section">
+    <div class="wrap">
+      <p class="eyebrow">ほかのツール</p>
+      <h2>AI といっしょに作っている、小さな道具たち</h2>
+      <div class="tools">
+        <article class="tool tool-current">
+          <img src="assets/urll-icon-navy-big.svg" alt="" width="56" height="56">
+          <div><h3>URLL</h3><p>ショートカットキーで URL・アプリを開く</p></div>
+          <span class="tag">公開中</span>
+        </article>
+        <article class="tool tool-soon">
+          <div class="tool-ph" aria-hidden="true">TV</div>
+          <div><h3>TVRS</h3><p>紹介文はこれから用意します</p></div>
+          <span class="tag tag-soon">準備中</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="footer-brand"><img src="assets/urll-icon-navy-big.svg" alt="" width="28" height="28"><span class="wordmark-wrap"><span class="wordmark">URLL</span><svg class="spark s1" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s2" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s3" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s4" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s5" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg></span></p>
+    <p>個人で AI といっしょに作っています。不具合や要望は <a class="js-source" href="#" data-pending="GitHub (準備中)">GitHub</a> へ。</p>
+    <p class="small">© <span class="js-year">2026</span> URLL ・ macOS は Apple Inc. の商標です。</p>
+  </div>
+</footer>
+
+<script>
+  // config.js の値をページに反映。空欄のリンクは「準備中」表示にする
+  (function () {
+    var c = window.URLL_SITE || {};
+    function each(sel, fn) { document.querySelectorAll(sel).forEach(fn); }
+    if (c.version) each('.js-version', function (el) { el.textContent = (el.tagName === 'B' ? '' : 'v') + c.version; });
+    if (c.minMacOS) each('.js-minos', function (el) { el.textContent = c.minMacOS; });
+    each('.js-year', function (el) { el.textContent = new Date().getFullYear(); });
+
+    function link(sel, url) {
+      each(sel, function (el) {
+        if (url) {
+          el.href = url;
+          if (!/^#/.test(url)) { el.target = '_blank'; el.rel = 'noopener'; }
+        } else if (el.dataset.pending) {
+          el.classList.add('is-pending');
+          el.setAttribute('aria-disabled', 'true');
+          el.removeAttribute('href');
+          var label = el.querySelector('.btn-label') || el;
+          label.textContent = el.dataset.pending;
+        }
+      });
+    }
+    link('.js-download', c.downloadUrl);
+    link('.js-source', c.sourceUrl);
+    link('.js-coffee', c.coffeeUrl);
+    link('.js-kofi', c.kofiUrl);
+  })();
+</script>
+</body>
+</html>
