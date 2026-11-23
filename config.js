@@ -3,8 +3,10 @@
 window.URLL_SITE = {
   minMacOS: "macOS 14 以降",
 
-  // GitHub のリポジトリ (ユーザー名/リポジトリ名)。最新リリースのバージョンと DMG はここから自動で読む
-  githubRepo: "iori-soft/URLL",
+  // サイトに出すバージョン番号と、ダウンロードする DMG (サイトの一番上に置く URLL-v<バージョン番号>.dmg)。
+  // この 2 行は tools/build-dmg.sh が新しい DMG を作ったときに書き換える。サイトだけ直すときは変えない
+  version: "0.008",
+  dmg: "URLL-v0.008.dmg",
 
   // ソースコード (GitHub リポジトリ) の URL。公開したら入れる
   sourceUrl: "https://github.com/iori-soft/URLL",

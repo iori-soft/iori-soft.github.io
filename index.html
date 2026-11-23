@@ -280,24 +280,13 @@
         }
       });
     }
-    // ダウンロード: GitHub の最新リリースを読み、バージョンと DMG のリンクを入れる。
-    // 読めないとき・リリースがまだないときは、リリースのページへのリンクにしてバージョンは出さない。
-    if (c.githubRepo) {
-      link('.js-download', 'https://github.com/' + c.githubRepo + '/releases/latest');
-      fetch('https://api.github.com/repos/' + c.githubRepo + '/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-        .then(function (rel) {
-          var dmg = (rel.assets || []).filter(function (a) { return /\.dmg$/i.test(a.name); })[0];
-          if (dmg) each('.js-download', function (el) { el.href = dmg.browser_download_url; el.removeAttribute('target'); });
-          var v = String(rel.tag_name || '').replace(/^v/i, '');
-          if (v) {
-            each('.js-version', function (el) { el.textContent = (el.tagName === 'B' ? '' : 'v') + v; });
-            each('.js-version-wrap', function (el) { el.hidden = false; });
-          }
-        })
-        .catch(function () {});
-    } else {
-      link('.js-download', '');
+    // ダウンロード: config.js の dmg (サイトの一番上の URLL-v<バージョン番号>.dmg) を指す。
+    // バージョン番号の表示: config.js の version を出す。書いていなければ出さない
+    link('.js-download', c.dmg || '');
+    each('.js-download', function (el) { el.removeAttribute('target'); el.removeAttribute('rel'); });
+    if (/^[0-9]+(\.[0-9]+)*$/.test(c.version || '')) {
+      each('.js-version', function (el) { el.textContent = (el.tagName === 'B' ? '' : 'v') + c.version; });
+      each('.js-version-wrap', function (el) { el.hidden = false; });
     }
     link('.js-source', c.sourceUrl);
     link('.js-coffee', c.coffeeUrl);
