@@ -413,7 +413,12 @@ code {
   .tools { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
-  .topnav a:not(.nav-coffee) { display: none; }
+  .topbar { gap: 6px; padding-inline: 12px; }
+  .topnav { gap: 0; }
+  .topnav a:not(.nav-coffee) { display: inline-block; font-size: .68rem; padding: 7px 5px; white-space: nowrap; }
+  .topnav .nav-coffee { display: inline-flex; align-items: center; gap: 2px; margin-left: 6px; }
+  .hero-badge { display: none; }
+  .hero-art { width: 112%; max-width: none; margin-left: -6%; }
   .brand img { width: 42px; height: 42px; }
   .hero-bubble { left: 26%; top: 10%; font-size: .78rem; padding: 7px 12px; }
   .minis { grid-template-columns: 1fr; }
@@ -422,6 +427,10 @@ code {
   .download-actions { justify-content: center; }
   .mock-list li { grid-template-columns: 56px 1fr; }
   .mock-url { grid-column: 2; margin-top: -6px; }
+}
+@media (max-width: 375px) {
+  .topnav .nav-coffee { font-size: 0; gap: 0; padding: 8px 10px; }
+  .topnav .nav-coffee .ico { width: 1.2rem; height: 1.2rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
