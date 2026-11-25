@@ -12,7 +12,10 @@ window.URLL_SITE = {
   sourceUrl: "https://github.com/iori-soft/URLL",
 
   // 応援ボタン(メイン): PayPal の支払いページ
+  // 日本語のページ用 (円)
   coffeeUrl: "https://www.paypal.com/ncp/payment/ZE3V7STJE6Z2S",
+  // 英語のページ用 (USD)。空欄なら英語でも上の coffeeUrl を使う
+  coffeeUrlEn: "https://www.paypal.com/ncp/payment/AFT8Z9J8Y6QMJ",
 
   // 応援ボタン(サブ): Ko-fi のページ
   kofiUrl: "https://ko-fi.com/iorisoft"

@@ -81,6 +81,9 @@ code {
 .topnav a:hover { background: rgba(255,255,255,.12); }
 .topnav .nav-coffee { background: var(--coffee); color: #2a2152; }
 .topnav .nav-coffee:hover { background: #ffe94d; }
+.topnav .nav-lang { border: 1.5px solid rgba(255,255,255,.4); margin-left: 4px; }
+.topnav .nav-lang:hover { background: rgba(255,255,255,.16); }
+.topnav .nav-lang .lang-short { display: none; }
 
 /* ---------- hero ---------- */
 .hero {
@@ -417,6 +420,9 @@ code {
   .topnav { gap: 0; }
   .topnav a:not(.nav-coffee) { display: inline-block; font-size: .68rem; padding: 7px 5px; white-space: nowrap; }
   .topnav .nav-coffee { display: inline-flex; align-items: center; gap: 2px; margin-left: 6px; }
+  .topnav .nav-lang { margin-left: 4px; padding: 6px 7px; }
+  .topnav .nav-lang .lang-long { display: none; }
+  .topnav .nav-lang .lang-short { display: inline; }
   .hero-badge { display: none; }
   .hero-art { width: 112%; max-width: none; margin-left: -6%; }
   .brand img { width: 42px; height: 42px; }
@@ -427,6 +433,14 @@ code {
   .download-actions { justify-content: center; }
   .mock-list li { grid-template-columns: 56px 1fr; }
   .mock-url { grid-column: 2; margin-top: -6px; }
+}
+/* 言語ボタンを足した分、少し狭い画面ではメニューの文字を小さくする */
+@media (max-width: 780px) and (min-width: 641px) {
+  .topnav a:not(.nav-coffee) { font-size: .8rem; padding: 6px 8px; }
+}
+/* スマホ幅では言語ボタンの場所を空けるため、上のメニューは「ダウンロード」「応援」「言語」だけにする */
+@media (max-width: 480px) {
+  .topnav a[href="#features"], .topnav a[href="#howto"] { display: none; }
 }
 @media (max-width: 375px) {
   .topnav .nav-coffee { font-size: 0; gap: 0; padding: 8px 10px; }
