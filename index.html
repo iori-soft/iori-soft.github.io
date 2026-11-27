@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261125-0930">
+  <link rel="stylesheet" href="style.css?v=20261128-0225">
   <!-- config.js はリリースのたびに中身 (version・dmg) が変わるので、ブラウザに古いものを使わせないよう毎回読み直す -->
   <script>document.write('<script src="config.js?t=' + Date.now() + '"><\/script>');</script>
   <script>
@@ -57,8 +57,8 @@
   <a class="brand" href="#top"><img src="assets/urll-icon-navy-big.svg" alt="" width="48" height="48"><span class="wordmark-wrap"><span class="wordmark">URLL</span><svg class="spark s1" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s2" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s3" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s4" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s5" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg></span></a>
   <nav class="topnav">
     <a href="#features" data-i18n="nav_features">Features</a>
-    <a href="#howto" data-i18n="nav_howto">Get Started</a>
     <a href="#download" data-i18n="nav_download">Download</a>
+    <a href="#howto" data-i18n="nav_howto">Setup</a>
     <a href="#coffee" class="nav-coffee"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z" fill="#fff" stroke="currentColor" stroke-width="2"/><path d="M16 11h1.5a2.5 2.5 0 0 1 0 5H16" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 3.5c-1 1.2 1 2.3 0 3.5M12 3.5c-1 1.2 1 2.3 0 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span data-i18n="nav_coffee">Support</span></a>
     <a class="nav-lang js-lang" href="?lang=ja" lang="ja" hreflang="ja"><span class="lang-long">日本語</span><span class="lang-short">JA</span></a>
   </nav>
@@ -197,6 +197,45 @@
             <div class="shot-placeholder" hidden data-i18n="i_shot">Screenshot (coming soon)</div></li>
         </ol>
       </div>
+
+      <div id="samples" class="install-detail sample-box">
+        <h3 data-i18n="sm_h">Try a sample setup</h3>
+        <p data-i18n="sm_p">Want to try URLL right away? Download a sample <code>.txt</code> file, then click the URLL icon in the menu bar → <b>Import Settings…</b> (or <b>Import…</b> in Settings). Opening URLs works right away without Accessibility permission.</p>
+        <ul class="sample-list">
+          <li class="sample-item">
+            <div class="sample-info">
+              <strong data-i18n="sm_g_h">Google Services (6 shortcuts)</strong>
+              <div class="sample-keys">
+                <span class="sample-key"><kbd>⌥G</kbd><span>Google</span></span>
+                <span class="sample-key"><kbd>⌥M</kbd><span>Gmail</span></span>
+                <span class="sample-key"><kbd>⌥A</kbd><span>Maps</span></span>
+                <span class="sample-key"><kbd>⌥C</kbd><span>Calendar</span></span>
+                <span class="sample-key"><kbd>⌥K</kbd><span>Keep</span></span>
+                <span class="sample-key"><kbd>⌥I</kbd><span>Gemini</span></span>
+              </div>
+            </div>
+            <a class="btn btn-sample js-sample" href="samples/urll-sample-google-services.txt" data-href-ja="samples/urll-sample-google-services-ja.txt" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="sm_dl">Download .txt</span>
+            </a>
+          </li>
+          <li class="sample-item">
+            <div class="sample-info">
+              <strong data-i18n="sm_m_h">Microsoft 365 (3 shortcuts)</strong>
+              <div class="sample-keys">
+                <span class="sample-key"><kbd>⌥W</kbd><span>Word</span></span>
+                <span class="sample-key"><kbd>⌥E</kbd><span>Excel</span></span>
+                <span class="sample-key"><kbd>⌥P</kbd><span>PowerPoint</span></span>
+              </div>
+            </div>
+            <a class="btn btn-sample js-sample" href="samples/urll-sample-microsoft-365.txt" data-href-ja="samples/urll-sample-microsoft-365-ja.txt" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="sm_dl">Download .txt</span>
+            </a>
+          </li>
+        </ul>
+        <p class="sample-note" data-i18n="sm_note">Note: Importing replaces your current shortcuts (export first to keep a backup). You can also open the <code>.txt</code> file in TextEdit and customize the keys or URLs freely.</p>
+      </div>
     </div>
   </section>
 
@@ -211,11 +250,12 @@
           <span class="js-version-wrap" hidden>Version <b class="js-version"></b> · </span><span class="js-minos">macOS 14 or later</span> · DMG file
         </p>
         <div class="download-actions">
-          <a class="btn btn-primary btn-lg js-download" href="#" data-pending="Download coming soon" data-pending-ja="ダウンロード準備中">
+          <a class="btn btn-primary js-download" href="#" data-pending="Download coming soon" data-pending-ja="ダウンロード準備中">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span class="btn-label" data-i18n="d_btn">Download DMG</span>
           </a>
-          <a class="btn btn-ghost-dark js-source" href="#" data-pending="Source code (coming soon)" data-pending-ja="ソースコード (準備中)" data-i18n="d_src">View README</a>
+          <a class="btn btn-ghost-dark" href="#samples" data-i18n="d_samples">Samples</a>
+          <a class="btn btn-ghost-dark js-source" href="#" data-pending="Source code (coming soon)" data-pending-ja="ソースコード (準備中)" data-i18n="d_src">README</a>
         </div>
       </div>
     </div>
@@ -281,7 +321,7 @@
 <footer class="footer">
   <div class="wrap footer-inner">
     <p class="footer-brand"><img src="assets/urll-icon-navy-big.svg" alt="" width="28" height="28"><span class="wordmark-wrap"><span class="wordmark">URLL</span><svg class="spark s1" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s2" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s3" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s4" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg><svg class="spark s5" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0 L12.2 7.8 L20 10 L12.2 12.2 L10 20 L7.8 12.2 L0 10 L7.8 7.8 Z"/></svg></span></p>
-    <p data-i18n="ft_p">Made by one person, together with AI. For bugs and requests, please visit <a class="js-source" href="#" data-pending="GitHub (coming soon)">GitHub</a>.</p>
+    <p data-i18n="ft_p"><span class="nw">Made by one person, together with AI.</span> <span class="nw">Updates &amp; feedback on <a class="js-source" href="#" data-pending="GitHub (coming soon)">GitHub</a> and <a class="js-x" href="#" data-pending="X (coming soon)">X (@iori_soft)</a>.</span></p>
     <p class="small" data-i18n="ft_small">© <span class="js-year">2026</span> URLL · macOS is a trademark of Apple Inc.</p>
   </div>
 </footer>
@@ -292,8 +332,8 @@
     "_title": "URLL — キーひとつで、いつものページへ",
     "_desc": "URLL は、ショートカットキー一発で URL やアプリを開ける macOS のメニューバー常駐アプリです。無料で使えます。",
     "nav_features": "できること",
-    "nav_howto": "使い方",
     "nav_download": "ダウンロード",
+    "nav_howto": "設定",
     "nav_coffee": "応援",
     "hero_badge": "macOS メニューバーアプリ ・ 無料",
     "hero_h1": "<span class=\"nw\">キーひとつで、<\/span><br><span class=\"hl nw\">いつものページへ。<\/span>",
@@ -344,12 +384,19 @@
     "i3": "URLL が起動して、メニューバーにアイコンが出ます。",
     "i4": "キー操作を使うときは、設定画面の「キー操作」タブで<b>「許可する…」<\/b>を押し、アクセシビリティで URLL をオンにします。",
     "i_shot": "画面写真（準備中）",
+    "sm_h": "サンプル設定で試してみる",
+    "sm_p": "まずは気軽に試してみたい方は、下のサンプル <code>.txt<\/code> をダウンロードして、メニューバーの URLL アイコン → <b>「設定を読み込み… (Import)」<\/b>（または設定画面の<b>「読み込み…」<\/b>）から取り込んでみてください。URL を開くだけならアクセシビリティ許可はいりません。",
+    "sm_g_h": "Google サービス（6件）",
+    "sm_m_h": "Microsoft 365（3件）",
+    "sm_dl": ".txt をダウンロード",
+    "sm_note": "※ 読み込みを行うと現在の設定と置き換わります（すでに設定がある場合は先に書き出してバックアップしてください）。テキストエディットで開いて、キーや URL を自由に書き換えてから取り込むこともできます。",
     "_dl_alt": "URLL のアイコン",
     "d_eyebrow": "ダウンロード",
     "d_h2": "URLL を無料で使う",
     "d_meta": "\n          <span class=\"js-version-wrap\" hidden>バージョン <b class=\"js-version\"><\/b> ・ <\/span><span class=\"js-minos\">macOS 14 以降<\/span> ・ DMG ファイル\n        ",
-    "d_btn": "DMG をダウンロード",
-    "d_src": "README を見る",
+    "d_btn": "DMGダウンロード",
+    "d_samples": "サンプル設定",
+    "d_src": "README",
     "co_eyebrow": "応援する",
     "co_h2": "気に入ったら、<br>コーヒー1杯おごってください。",
     "co_p": "URLL は無料で使えます。もし毎日の役に立ったら、コーヒー1杯ぶんの応援をもらえるととてもうれしいです。次のバージョンを作る元気になります。",
@@ -363,7 +410,7 @@
     "t_tag": "公開中",
     "t_tvrs": "紹介文はこれから用意します",
     "t_soon": "準備中",
-    "ft_p": "個人で AI といっしょに作っています。不具合や要望は <a class=\"js-source\" href=\"#\" data-pending=\"GitHub (準備中)\">GitHub<\/a> へ。",
+    "ft_p": "<span class=\"nw\">個人で AI といっしょに作っています。<\/span><span class=\"nw\">不具合や要望は <a class=\"js-source\" href=\"#\" data-pending=\"GitHub (準備中)\">GitHub<\/a> や <a class=\"js-x\" href=\"#\" data-pending=\"X (準備中)\">X (@iori_soft)<\/a> へ。<\/span>",
     "ft_small": "© <span class=\"js-year\">2026<\/span> URLL ・ macOS は Apple Inc. の商標です。"
   };
 </script>
@@ -377,6 +424,7 @@
         document.querySelectorAll('[data-i18n-alt]').forEach(function (el) { var t = ja[el.dataset.i18nAlt]; if (t != null) el.alt = t; });
         document.querySelectorAll('[data-i18n-aria]').forEach(function (el) { var t = ja[el.dataset.i18nAria]; if (t != null) el.setAttribute('aria-label', t); });
         document.querySelectorAll('[data-pending-ja]').forEach(function (el) { el.dataset.pending = el.dataset.pendingJa; });
+        document.querySelectorAll('.js-sample[data-href-ja]').forEach(function (el) { el.href = el.dataset.hrefJa; });
         if (ja._title) document.title = ja._title;
         var d = document.querySelector('meta[name="description"]'); if (d && ja._desc) d.content = ja._desc;
       }
@@ -428,6 +476,7 @@
       each('.js-version-wrap', function (el) { el.hidden = false; });
     }
     link('.js-source', c.sourceUrl);
+    link('.js-x', c.xUrl);
     // PayPal は言語ごとに別のページ (英語は coffeeUrlEn、無ければ coffeeUrl)
     link('.js-coffee', (window.URLL_LANG !== 'ja' && c.coffeeUrlEn) || c.coffeeUrl);
     link('.js-kofi', c.kofiUrl);

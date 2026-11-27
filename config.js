@@ -11,6 +11,9 @@ window.URLL_SITE = {
   // ソースコード (GitHub リポジトリ) の URL。公開したら入れる
   sourceUrl: "https://github.com/iori-soft/URLL",
 
+  // X (旧 Twitter) のアカウント URL
+  xUrl: "https://x.com/iori_soft",
+
   // 応援ボタン(メイン): PayPal の支払いページ
   // 日本語のページ用 (円)
   coffeeUrl: "https://www.paypal.com/ncp/payment/ZE3V7STJE6Z2S",

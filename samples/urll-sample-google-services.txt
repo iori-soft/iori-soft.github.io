@@ -1,0 +1,51 @@
+# ======================================================================
+# URLL settings file (v0.008)
+# ======================================================================
+# You can view and edit this file in a text editor, then import it
+# from the URLL menu bar icon -> "Import Settings..." (or Settings).
+#
+# [How to write it]
+# - "---" separates one shortcut from the next.
+# - Name: the name shown in the menu and the list
+# - Key: the shortcut key that triggers it (e.g. ⌥G, ⌘⇧K, ⌃/, Opt+G)
+# - Write exactly one of URL / App / Action.
+#     URL: the address of the website to open (e.g. https://www.google.com)
+#     App: the path of the app to open (e.g. /Applications/Safari.app)
+#     Action: the key to send to the frontmost app (e.g. ⌘W, ⇧⌘T, ⌃Tab)
+# ======================================================================
+
+# Key that shows the shortcut list (default: ⌃/)
+List key: ⌃/ [code:44, mod:4096]
+
+# --- Google services (⌥ + G, M, A, C, K, I) ---
+
+---
+Name: Google Top
+Key: ⌥G
+URL: https://www.google.com
+
+---
+Name: Gmail
+Key: ⌥M
+URL: https://mail.google.com
+
+---
+Name: Google Maps
+Key: ⌥A
+URL: https://maps.google.com
+
+---
+Name: Google Calendar
+Key: ⌥C
+URL: https://calendar.google.com
+
+---
+Name: Google Keep
+Key: ⌥K
+URL: https://keep.google.com
+
+---
+Name: Google Gemini
+Key: ⌥I
+URL: https://gemini.google.com
+

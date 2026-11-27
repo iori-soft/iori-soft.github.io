@@ -1,0 +1,35 @@
+# ======================================================================
+# URLL settings file (v0.008)
+# ======================================================================
+# You can view and edit this file in a text editor, then import it
+# from the URLL menu bar icon -> "Import Settings..." (or Settings).
+#
+# [How to write it]
+# - "---" separates one shortcut from the next.
+# - Name: the name shown in the menu and the list
+# - Key: the shortcut key that triggers it (e.g. ⌥G, ⌘⇧K, ⌃/, Opt+G)
+# - Write exactly one of URL / App / Action.
+#     URL: the address of the website to open (e.g. https://www.google.com)
+#     App: the path of the app to open (e.g. /Applications/Safari.app)
+#     Action: the key to send to the frontmost app (e.g. ⌘W, ⇧⌘T, ⌃Tab)
+# ======================================================================
+
+# Key that shows the shortcut list (default: ⌃/)
+List key: ⌃/ [code:44, mod:4096]
+
+# --- Microsoft 365 (⌥ + W, E, P) ---
+
+---
+Name: Microsoft 365 Word
+Key: ⌥W
+URL: https://www.office.com/launch/word
+
+---
+Name: Microsoft 365 Excel
+Key: ⌥E
+URL: https://www.office.com/launch/excel
+
+---
+Name: Microsoft 365 PowerPoint
+Key: ⌥P
+URL: https://www.office.com/launch/powerpoint
